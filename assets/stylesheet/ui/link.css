@@ -1,0 +1,116 @@
+.link {
+  display: flex;
+  flex-flow: column;
+  color: var(--golden);
+  white-space: nowrap;
+  width: fit-content;
+  overflow-x: hidden;
+}
+
+.link::after {
+  position: relative;
+  content: "";
+  width: 200%;
+  height: 1px;
+  border-bottom: 1px dashed var(--golden);
+  margin: 0.375rem 0 0 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+@keyframes link_anim {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.link:hover::after {
+  animation-name: link_anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* img-link */
+.img-link {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: radial-gradient(
+    119.38% 119.38% at 10.4% 8.42%,
+    #3d3d3d 0%,
+    #141414 100%
+  );
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.img-link:hover {
+  transform: scale(110%);
+}
+
+.img-link_plain::before {
+  display: none;
+}
+
+.img-link::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  border-radius: 0.325rem;
+  background: linear-gradient(
+    90deg,
+    #ba945e 13%,
+    #d1b16e 28.000000000000004%,
+    #e2c579 42%,
+    #ecd180 56.00000000000001%,
+    #f0d683 70%,
+    #e7cc7d 75%,
+    #d2b16e 84%,
+    #af8757 95%,
+    #9f734c 100%
+  );
+  z-index: -1;
+}
+
+.img-link::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  top: 4px;
+  left: 4px;
+  border-radius: 0.325rem;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-link_yt::after {
+  background-image: url("../../icons/yt.svg");
+  background-image: url("../../icons/yt.svg"),
+    radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3d3d3d 0%, #141414 100%);
+}
+
+.img-link_tg::after {
+  background-image: url("../../icons/tg.svg");
+  background-image: url("../../icons/tg.svg"),
+    radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3d3d3d 0%, #141414 100%);
+}
+
+.img-link_vk::after {
+  background-image: url("../../icons/vk.svg");
+  background-image: url("../../icons/vk.svg"),
+    radial-gradient(119.38% 119.38% at 10.4% 8.42%, #3d3d3d 0%, #141414 100%);
+}

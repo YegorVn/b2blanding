@@ -1,0 +1,20 @@
+:root {
+  /* fonts */
+  --font-secondary: "Oranienbaum", serif;
+  --font-primary: "Noto Sans", sans-serif;
+  /* text */
+  --text-xxl: 3.5rem;
+  --text-xl: 2.5rem;
+  --text-l: 1.5rem;
+  --text-m: 1.25rem;
+  --text-s: 1rem;
+  --text-xs: 0.875rem;
+  /* colors */
+  --blue: #17868d;
+  --light-black: #010e10;
+  --dark-black: #000000;
+  --light-grey: #3d3d3d;
+  --dark-grey: #1c1c1c;
+  --golden: #f0d683;
+  --white: #ffffff;
+}

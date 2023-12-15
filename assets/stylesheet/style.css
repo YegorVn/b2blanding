@@ -1,0 +1,17 @@
+/* global*/
+@import url("./global.css");
+@import url("./variables.css");
+@import url("./modifiers.css");
+
+/* global sections */
+@import url("./global_sections/header.css");
+
+/* sections */
+@import url("./sections/banner.css");
+@import url("./sections/benefits.css");
+@import url("./sections/features.css");
+
+/* ui */
+@import url("./ui/button.css");
+@import url("./ui/link.css");
+@import url("./ui/burger.css");

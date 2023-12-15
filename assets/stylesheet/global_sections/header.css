@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+  background-color: var(--light-black);
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 96rem;
+  width: 100%;
+}
+
+.header__logo-text {
+  margin: 0 0 0 1.5rem;
+  font-size: var(--text-xs);
+  color: var(--golden);
+}
+
+.header__nav {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+/* email-wrapper */
+.email-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.header__email-wrapper {
+}
+
+.email-wrapper__label {
+  color: #767676;
+}
+
+.email-wrapper__link {
+  margin: 0.35rem 0 0 0;
+}
+
+/* soc-media */
+.header__sm {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 3.8vw;
+}
+
+.header__img-link {
+  margin: 0 0 0 1.25rem;
+}
+
+.header__img-link:first-child {
+  margin-left: 0;
+}
+
+/* phone-wrapper */
+.phone-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  margin: 0 0 0 3.8vw;
+}
+
+.header__phone-wrapper {
+}
+
+.phone-wrapper__label {
+  font-family: var(--font-secondary);
+  color: var(--white);
+  font-size: var(--text-l);
+}
+
+.header__burger{
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .header__nav {
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .header__sm {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-height: 6rem;
+  }
+
+  .header__burger{
+    margin: 0 0 0 auto;
+    display: flex;
+  }
+
+  .header__logo {
+    width: min(45%, 11rem);
+  }
+  
+  /* nav */
+  .header__nav {
+    position: fixed;
+    flex-flow: column;
+    background: linear-gradient(90deg, var(--dark-black) 0%,  var(--dark-grey) 100%);;
+    top: 50%;
+    transform: translateY(-50%) translateX(125%);
+    padding: 10vh 7.5vw;
+    width: fit-content;
+    border-radius: 2.5rem;
+    right: 1.5rem;
+    border: 1px dashed var(--golden);
+    transition: transform 0.25s, opacity 0.15s;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .header__nav_active{
+    z-index: 1000;
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+    transition: transform 0.55s, opacity 0.25s;
+  }
+
+  .header__phone-wrapper{
+    order: -1;
+    margin: 0 0 0 0;
+    align-items: flex-start;
+  }
+
+  .header__email-wrapper{
+    margin: 1.5rem 0 0 0;
+  }
+
+  .header__sm{
+    margin: 3rem 0 0 0;
+  }
+ 
+}
+
+@media screen and (max-width: 534px) {
+  .header__logo-text {
+    display: none;
+  }
+}

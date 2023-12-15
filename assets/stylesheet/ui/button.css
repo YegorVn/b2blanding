@@ -1,0 +1,46 @@
+.btn {
+  background: linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  background: -webkit-linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  background: -moz-linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  background: -o-linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  background: linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  position: relative;
+  padding: 1.125rem 2.096rem;
+  font-size: var(--text-m);
+  border-radius: 0.45rem;
+  color: var(--dark-black);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  left: -5px;
+  border-radius: 0.625rem;
+  background: linear-gradient(90deg, #67310a -108.98%, #f0d683 129.77%);
+  z-index: -1;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  background: linear-gradient(-90deg, #9f734c 0%, #f0d683 100%);
+  border-radius: 0.5rem;
+  z-index: -1;
+}
