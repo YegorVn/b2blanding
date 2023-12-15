@@ -13,8 +13,7 @@
   font-family: var(--font-secondary);
   letter-spacing: 0.05em;
   white-space: nowrap;
-  cursor: pointer;
-  transition: 0.15s;
+  transition: color 0.15s;
 }
 
 .btn:hover {

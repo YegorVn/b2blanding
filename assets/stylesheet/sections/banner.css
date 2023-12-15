@@ -138,9 +138,7 @@
 
 /* achieves */
 .banner__achieves {
-  max-width: 96rem;
-  width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .achieves {
@@ -154,6 +152,8 @@
   border-radius: 2.625rem;
   row-gap: 2.5rem;
   column-gap: 3rem;
+  max-width: 96rem;
+  width: 100%;
 }
 
 .achieves::after {
@@ -321,11 +321,48 @@
     font-size: var(--text-m);
   }
 
+  .btn-card__arrow{
+    display: none;
+  }
+
   .banner__mid {
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
+  }
+
+  /* br */
+  .banner__sub-h br{
+    display: none;
+  }
+
+  .adv-card br{
+    display: none;
+  }
+
+  .banner__h1 br{
+    display: none;
+  }
+
+  /* adv-card */
+  .adv-card{
+    width: 100%;
+    padding: 3.25rem 1.625rem 3.25rem 1.625rem;
+  }
+
+  .adv-card__text{
+    margin-top: 1rem;
+  }
+
+  /* yt-card */
+  .yt-card{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .yt-card br{
+    display: none;
   }
 
   .achieves {

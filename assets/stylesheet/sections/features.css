@@ -125,7 +125,6 @@
   animation-delay: 3s;
 }
 
-
 /* arrow modified */
 .pointer_reversed .pointer__arrow {
   right: 2em;
@@ -228,7 +227,6 @@
 
   /* img */
   .features__img-wrapper {
-    /* display: none; */
     position: absolute;
     left: 50%;
     top: 17.5%;

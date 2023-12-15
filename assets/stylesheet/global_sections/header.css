@@ -7,8 +7,8 @@
 
 .header__content {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 96rem;
   width: 100%;
 }
@@ -31,15 +31,13 @@
   align-items: flex-start;
 }
 
-.header__email-wrapper {
-}
-
 .email-wrapper__label {
   color: #767676;
 }
 
 .email-wrapper__link {
   margin: 0.35rem 0 0 0;
+  flex: 0 0 auto;
 }
 
 /* soc-media */
@@ -62,10 +60,10 @@
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  margin: 0 0 0 3.8vw;
 }
 
 .header__phone-wrapper {
+  margin: 0 0 0 3.8vw;
 }
 
 .phone-wrapper__label {
@@ -100,10 +98,6 @@
   .header__burger{
     margin: 0 0 0 auto;
     display: flex;
-  }
-
-  .header__logo {
-    width: min(45%, 11rem);
   }
   
   /* nav */

@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-weight: 300;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -17,11 +17,10 @@ body {
 .main {
   display: flex;
   flex-flow: column;
-  overflow-x: hidden;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
 }
 
-.section{
+.section {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -29,14 +28,16 @@ body {
 /* normalize */
 button {
   border: unset;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-strong{
-    font-weight: 700;
+strong {
+  font-weight: 700;
 }
 
 /* h1-h4 */
@@ -69,37 +70,38 @@ h3 {
 }
 
 /* others */
-.li_hidden{
+.li_hidden {
   opacity: 0;
   transform: translateY(-25%);
   transition: opacity 2s, transform 1.5s;
 }
 
-.li_shown{
+.li_shown {
   opacity: 1;
   transform: translateY(0);
 }
 
-@media screen and (max-width: 1024px) {
-  br{
-  }
-}
-
 @media screen and (max-width: 534px) {
-  h1{
+  h1 {
     font-size: var(--text-xl);
   }
 
-  h2{
+  h2 {
     font-size: var(--text-xl);
   }
 
-  h3{
+  h3 {
     font-size: var(--text-m);
   }
 
-  .section{
+  .section {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+}
+
+@media screen and (max-width: 360px) {
+  html{
+    font-size: calc(2.25vw + 1vh);
+  }  
 }

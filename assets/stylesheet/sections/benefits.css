@@ -9,25 +9,20 @@
   background: linear-gradient(180deg, #010E0F 79.28%, rgba(1, 14, 15, 0.00) 100%);
 }
 
-.benefits__h2 {
-}
-
 .benefits__cards {
   display: flex;
   justify-content: space-between;
   position: relative;
   padding: 0 6.5vw;
-  /* padding: 0 6.5vw; */
   max-width: 96rem;
   margin: 3.625rem 0 0 0;
   z-index: 0;
-  /* column-gap: 2.5rem; */
 }
 
+/* card */
 .card {
   padding: 2.625rem 2.75rem 11.75rem 4.25rem;
   width: max(44.5%, 29rem);
-  /* width: calc(37% + 3.5vw); */
 }
 
 .card_primary {
@@ -80,9 +75,6 @@
   margin-top: 0;
 }
 
-.benefits__card {
-}
-
 /* pill */
 .pill {
   display: flex;
@@ -91,9 +83,6 @@
   border-radius: 12.5rem;
   padding: 2.125rem;
   z-index: 3;
-}
-
-.benefits__pill {
 }
 
 .pill__text {
@@ -159,7 +148,7 @@
     flex-flow: column;
   }
 
-  .benefits__card {
+  .card {
     width: 100%;
   }
 
@@ -172,9 +161,8 @@
   .benefits__h2 br{
     display: none;
   }
-}
 
-@media screen and (max-width: 524px) {
-    .benefits__cards {
-    }
+  .card {
+    padding: 2.625rem 2rem 8.25rem 2.75rem;
+}
 }
